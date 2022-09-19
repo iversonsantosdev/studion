@@ -5,9 +5,10 @@
 }
 
  :root {
-   --color-primary: #ffc500;
    font-family: 'Montserrat', sans-serif;
    font-size: 16px;
+   --color-primary: #ffc500;
+   --default-padding: 1rem;
  }
  
  body {
@@ -72,4 +73,15 @@
 
   .copy--primary {
     color: var(--color-primary)
+  }
+
+  #slider {
+    height: calc(100vh - 7.75rem);
+    padding: var(--default-padding);
+    background-color: #000;
+    background-image: url('./src/images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
   }
