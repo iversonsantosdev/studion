@@ -31,7 +31,6 @@
    align-items: center;
    top: 0;
    left: 0;
-   
    width: 100vw;
    height: 7.75rem;
    padding: 0 1rem;
@@ -67,9 +66,8 @@
   }
 
   .logo-studion__subtitle {
-    font-weight: 400;
-    text-align: right;
     font-size: 0.875rem;
+    font-weight: 400;
   }
 
   .copy--primary {
@@ -77,23 +75,61 @@
   }
 
   #slider {
+    padding: var(--default-padding);
     background-color: #000;
     color: #fff;
   }
   .slide {
-    position: relative;
-    height: calc(100vh - 7.75rem);
+   position: relative; 
+   height: calc(100vh - 7.75rem);  
   }
 
   .slide__background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
-  .slide__copy {
-  position: absolute;
-  top: 0;
-  left: 50vw;
-}
+  .slide__copy{
+    position: absolute;
+    top: 3rem;
+    left: 50vw;
+  }
+ .slide__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+ }
+
+ .slide__copy h2 {
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  line-height: 6.25rem;
+ }
+
+ .slide__copy h2 span {
+  display: block;
+ }
+
+ .btn {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  color: var(--color-primary);
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+  background: unset;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.8s all ease;
+ }
+
+ .btn:hover,
+ .btn:active,
+ .btn:focus  {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+ }
